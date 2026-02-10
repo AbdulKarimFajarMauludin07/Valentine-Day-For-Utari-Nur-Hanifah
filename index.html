@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine Day! For Utari Nur Hanifah 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+    <source src="music/valentine.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<!-- LAYER 1 -->
+<div id="layer1" class="layer">
+    <img src="img/surat.png" class="clickable" onclick="toLayer2()" alt="Surat">
+    <h1>Hai Utari Nur Hanifah This For You 💌</h1>
+</div>
+
+<!-- LAYER 2 -->
+<div id="layer2" class="layer hidden">
+
+    <!-- BINGKAI KARTU -->
+    <div class="frame">
+        <img src="img/Kartu Ucapan.png" class="kartu" alt="Kartu Ucapan">
+    </div>
+
+    
+    <h4>“Terima kasih ya, udah jadi bagian paling indah di hidup aku.”</h4>
+    <h4>“Hari ini cuma pengingat kecil… kalau aku bersyukur punya kamu.”</h4>
+    <h4>Valentine kali ini, boleh ya aku habisin sama kamu?</h4>
+
+    <button onclick="backToLayer1()">Nggak Ah</button>
+    <button onclick="toLayer3()">Boleh BANGET!</button>
+</div>
+
+<!-- LAYER 3 -->
+<div id="layer3" class="layer hidden">
+    <h2>Aku Penasaran Seberapa Besar Sih Perasaan Kamu Ke Aku?</h2>
+    <h2>Kalau Kamu Bener-Bener Sayang dan Cinta Sama Aku, COBA BUKTIIN! 😏</h2>
+    <img src="img/love.png" class="love clickable" onclick="growLove()" alt="Love">
+    <h4>Klik Love-Nya Setelah Itu SS (Screen Shoot) Kirim Ke Aku Yaw 😉</h4>
+    <button onclick="backToLayer2()">⬅ Kembali</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

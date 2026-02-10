@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+
+    background-image: url("img/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.layer {
+    animation: fade 0.5s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    max-width: 220px;
+}
+
+.clickable {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.clickable:hover {
+    transform: scale(1.1);
+}
+
+.kartu {
+    max-width: 260px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.buku {
+    margin-top: 20px;
+}
+
+.love {
+    width: 120px;
+    transition: transform 0.3s;
+}
+
+button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #e53935;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    background: #d81b60;
+    color: white;
+    font-size: 18px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h1,h4,h2 {
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* BINGKAI */
+.frame {
+    background: #fffaf0;
+    padding: 20px;
+    border-radius: 20px;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.3),
+        inset 0 0 0 4px #f8d7da;
+
+    max-width: 360px;
+    margin: 0 auto 25px;
+}
+
+/* GAMBAR KARTU */
+.kartu {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
+}
